@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | RTE & Scrum Master</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0f19;
+  --card:#111827;
+  --accent:#facc15;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 25px;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:60px;
+  animation:fadeIn 1s ease forwards;
+}
+
+header h1{
+  font-size:2.8rem;
+  font-weight:700;
+}
+
+header h1 span{
+  color:var(--accent);
+}
+
+.subtitle{
+  font-size:1rem;
+  color:var(--muted);
+  margin-top:5px;
+}
+
+.contact{
+  text-align:right;
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+.section{
+  margin-bottom:60px;
+  opacity:0;
+  transform:translateY(20px);
+  animation:slideUp 0.8s ease forwards;
+}
+
+.section:nth-child(2){animation-delay:.3s;}
+.section:nth-child(3){animation-delay:.5s;}
+.section:nth-child(4){animation-delay:.7s;}
+.section:nth-child(5){animation-delay:.9s;}
+
+.section h2{
+  font-size:1.2rem;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--accent);
+  margin-bottom:25px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:14px;
+  margin-bottom:20px;
+  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+.card h3{
+  font-size:1.1rem;
+  margin-bottom:5px;
+}
+
+.card span{
+  font-size:.85rem;
+  color:var(--muted);
+}
+
+.metrics{
+  margin-top:10px;
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skill{
+  border:1px solid var(--accent);
+  color:var(--accent);
+  padding:6px 14px;
+  border-radius:25px;
+  font-size:.85rem;
+  transition:.3s;
+}
+
+.skill:hover{
+  background:var(--accent);
+  color:#000;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes slideUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .contact{
+    text-align:left;
+    margin-top:15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <div>
+    <h1>Your Name<span>.</span></h1>
+    <div class="subtitle">
+      Release Train Engineer | Scrum Master | Agile Delivery Leader
+    </div>
+  </div>
+
+  <div class="contact">
+    Buenos Aires, Argentina <br>
+    your@email.com <br>
+    linkedin.com/in/yourprofile
+  </div>
+</header>
+
+<section class="section">
+  <h2>Executive Profile</h2>
+  <div class="card">
+    Agile leader with experience scaling Scrum in startup and enterprise environments.
+    Specialized in delivery optimization, quality assurance alignment, and ITIL v4 service value integration.
+    Currently acting as RTE/Scrum coordinating cross-functional teams and improving predictability, flow, and stakeholder alignment.
+  </div>
+</section>
+
+<section class="section">
+  <h2>Professional Experience</h2>
+
+  <div class="card">
+    <h3>Release Train Engineer / Scrum Master</h3>
+    <span>2023 – Present</span>
+    <div class="metrics">
+      • Coordinating multiple agile teams and managing cross-team dependencies  
+      • Facilitating PI Planning, Inspect & Adapt, and executive reporting  
+      • Improving sprint predictability and delivery flow  
+      • Aligning business strategy with incremental value delivery  
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Scrum Master – Startup Environment</h3>
+    <span>2020 – 2022</span>
+    <div class="metrics">
+      • Led Scrum implementation from early-stage team formation  
+      • Improved delivery cadence and team accountability  
+      • Built transparency through metrics and backlog refinement discipline  
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Quality Assurance Project – ITIL v4 Framework</h3>
+    <span>2020 – 2022</span>
+    <div class="metrics">
+      • Applied ITIL v4 Service Value System principles  
+      • Strengthened quality assurance processes  
+      • Integrated service management mindset into agile workflows  
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Core Competencies</h2>
+  <div class="skills">
+    <div class="skill">Scrum</div>
+    <div class="skill">SAFe</div>
+    <div class="skill">ITIL v4</div>
+    <div class="skill">PI Planning</div>
+    <div class="skill">Agile Metrics</div>
+    <div class="skill">Stakeholder Management</div>
+    <div class="skill">Azure DevOps</div>
+    <div class="skill">Continuous Improvement</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Leadership Focus</h2>
+  <div class="card">
+    • Scaling agile delivery frameworks  
+    • Building high-performance teams  
+    • Aligning quality, service management, and agile execution  
+    • Transitioning from Scrum Master to Enterprise-level RTE leadership  
+  </div>
+</section>
+
+</div>
+
+</body>
+</html>
