@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gisella | Release Train Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#0b0f19;
+--card:#111827;
+--accent:#facc15;
+--text:#e5e7eb;
+--muted:#9ca3af;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.6;}
+
+.container{max-width:1100px;margin:auto;padding:60px 25px;}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+margin-bottom:70px;
+animation:fade 1s ease;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:22px;
+}
+
+.photo{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid var(--accent);
+box-shadow:0 0 20px rgba(250,204,21,.25);
+}
+
+h1{font-size:2.6rem;font-weight:700;}
+h1 span{color:var(--accent);}
+
+.subtitle{color:var(--muted);margin-top:6px;}
+
+.contact{text-align:right;color:var(--muted);font-size:.95rem;line-height:1.7;}
+
+.section{margin-bottom:70px;opacity:0;transform:translateY(20px);animation:slide .8s forwards;}
+.section:nth-child(2){animation-delay:.2s;}
+.section:nth-child(3){animation-delay:.4s;}
+.section:nth-child(4){animation-delay:.6s;}
+.section:nth-child(5){animation-delay:.8s;}
+.section:nth-child(6){animation-delay:1s;}
+.section:nth-child(7){animation-delay:1.2s;}
+
+.section h2{
+color:var(--accent);
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:25px;
+font-size:1.1rem;
+}
+
+.card{
+background:var(--card);
+padding:26px;
+border-radius:16px;
+margin-bottom:20px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.5);}
+.card h3{margin-bottom:6px;font-size:1.1rem;}
+.card span{color:var(--muted);font-size:.85rem;}
+.metrics{margin-top:12px;color:var(--muted);font-size:.92rem;}
+
+.skills{display:flex;flex-wrap:wrap;gap:12px;}
+.skill{
+border:1px solid var(--accent);
+color:var(--accent);
+padding:7px 14px;
+border-radius:30px;
+font-size:.85rem;
+transition:.25s;
+}
+.skill:hover{background:var(--accent);color:#000;}
+
+@keyframes fade{from{opacity:0;}to{opacity:1;}}
+@keyframes slide{to{opacity:1;transform:translateY(0);}}
+
+@media(max-width:768px){
+header{flex-direction:column;align-items:flex-start}
+.contact{text-align:left;margin-top:18px}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+
+<div class="profile">
+<img src="foto.jpg" class="photo" alt="Gisella Photo">
+
+<div>
+<h1>Gisella<span>.</span></h1>
+<div class="subtitle">Release Train Engineer | Scrum Master | Agile Delivery Leader</div>
+</div>
+</div>
+
+<div class="contact">
+📧 TU_MAIL<br>
+📱 TU_NUMERO<br>
+🔗 TU_LINKEDIN<br>
+Buenos Aires, Argentina
+</div>
+
+</header>
+
+<section class="section">
+<h2>Executive Profile</h2>
+<div class="card">
+Agile leader experienced in startup and enterprise environments. Specialized in scaling delivery, aligning business and technology strategy, and integrating ITIL v4 service value practices into agile frameworks. Currently coordinating multiple teams as RTE/Scrum improving predictability, flow and stakeholder transparency.
+</div>
+</section>
+
+<section class="section">
+<h2>Professional Experience</h2>
+
+<div class="card">
+<h3>Release Train Engineer / Senior Scrum Master</h3>
+<span>2023 – Present</span>
+<div class="metrics">
+• Coordinating multiple agile teams and cross-team dependencies<br>
+• Facilitating PI Planning, Reviews and Inspect & Adapt workshops<br>
+• Improving sprint predictability and reducing carry-over<br>
+• Aligning stakeholders with incremental value delivery<br>
+• Tracking KPIs: velocity, burn-down, cycle time and defects<br>
+• Reporting delivery health to leadership
+</div>
+</div>
+
+<div class="card">
+<h3>Scrum Master – Startup Environment</h3>
+<span>2020 – 2022</span>
+<div class="metrics">
+• Implemented Scrum from early stage team formation<br>
+• Improved delivery cadence and accountability<br>
+• Built Azure DevOps dashboards for transparency<br>
+• Coached Product Owner in backlog prioritization
+</div>
+</div>
+
+<div class="card">
+<h3>Quality Assurance Initiative – ITIL v4 Project</h3>
+<span>2020 – 2022</span>
+<div class="metrics">
+• Applied ITIL v4 Service Value System principles<br>
+• Integrated incident & problem management into agile workflows<br>
+• Reduced recurring defects through continuous improvement
+</div>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Delivery Impact</h2>
+<div class="card">
+• Improved predictability and team flow<br>
+• Reduced blockers and escalations<br>
+• Increased delivery visibility for stakeholders<br>
+• Strengthened agile maturity across teams
+</div>
+</section>
+
+<section class="section">
+<h2>Tools & Frameworks</h2>
+<div class="skills">
+<div class="skill">Scrum</div>
+<div class="skill">SAFe</div>
+<div class="skill">ITIL v4</div>
+<div class="skill">Azure DevOps</div>
+<div class="skill">Jira</div>
+<div class="skill">Kanban</div>
+<div class="skill">PI Planning</div>
+<div class="skill">Agile Metrics</div>
+<div class="skill">Risk Management</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Freelance & Consulting</h2>
+<div class="card">
+• Agile Health Check & Team Assessment<br>
+• Scrum implementation for startups<br>
+• PI Planning facilitation<br>
+• Delivery optimization roadmap
+</div>
+</section>
+
+<section class="section">
+<h2>Leadership Focus</h2>
+<div class="card">
+Scaling agile organizations, enabling high-performance teams, improving delivery predictability and evolving towards enterprise-level RTE leadership.
+</div>
+</section>
+
+</div>
+</body>
+</html>
